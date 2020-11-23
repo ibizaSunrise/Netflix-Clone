@@ -18,13 +18,18 @@ export const Inner = styled.div`
     margin: auto;
     width: 100%;
 
-
     @media (max-width: 1000px) {
         flex-direction: column;
     }
 `
 
-export const Container = styled.div``
+export const Container = styled.div`
+    @media (max-width: 1000px) {
+        ${Item}:last-of-type h2 {
+            margin-bottom: 50px;
+        }
+    }
+`
 
 export const Pane = styled.div`
     width: 50%;
